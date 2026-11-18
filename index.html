@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Terms of use and privacy information for Family Hub traffic estimates.">
+  <title>Family Hub Traffic Estimates — Terms and Privacy</title>
+  <style>
+    :root { color-scheme: light; --ink: #34291e; --muted: #685b4c; --paper: #fffaf0; --line: #d8c6a6; --accent: #9b4c1c; }
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 2rem 1rem; background: #f3ead8; color: var(--ink); font: 1rem/1.65 system-ui, sans-serif; }
+    main { max-width: 50rem; margin: 0 auto; padding: clamp(1.25rem, 5vw, 3rem); background: var(--paper); border: 1px solid var(--line); border-radius: 1rem; box-shadow: 0 .5rem 2rem #34291e12; }
+    h1, h2 { line-height: 1.2; }
+    h1 { margin-top: 0; font-size: clamp(1.8rem, 5vw, 2.5rem); }
+    h2 { margin-top: 2rem; font-size: 1.25rem; }
+    p, li { max-width: 72ch; }
+    a { color: #79350f; text-underline-offset: .18em; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+    .attribution { padding: .75rem 1rem; border-left: .25rem solid var(--accent); background: #f4e5cc; font-weight: 650; }
+    .updated { color: var(--muted); font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Family Hub Traffic Estimates</h1>
+    <p class="updated">Terms of use and privacy information</p>
+
+    <h2>What this feature does</h2>
+    <p>Family Hub is a private household dashboard. Its optional traffic feature displays estimated driving times for household-selected trips. Estimates are for general planning only: traffic and travel times can change, and this feature does not provide turn-by-turn navigation, guarantee arrival times, or replace road signs, emergency services, or a navigation product.</p>
+    <p>Traffic routing is currently disabled. If enabled in the future, requests will be sent to Google Routes API from the computer running the dashboard. The dashboard displays textual drive-time estimates and does not display a map.</p>
+
+    <h2>Terms of use</h2>
+    <p>Use the estimates at your own discretion. Family Hub and its estimates are provided without a guarantee of accuracy, availability, or fitness for a particular trip. Do not rely on them for emergencies or safety-critical decisions. Google Maps Platform content and services are also subject to the applicable Google terms:</p>
+    <ul>
+      <li><a href="https://developers.google.com/maps/documentation/routes/policies">Google Routes API policies and attribution requirements</a></li>
+      <li><a href="https://cloud.google.com/maps-platform/terms">Google Maps Platform Terms of Service</a></li>
+      <li><a href="https://policies.google.com/terms">Google Terms of Service</a></li>
+    </ul>
+
+    <h2>Privacy</h2>
+    <p>If traffic routing is enabled, the dashboard sends the configured trip starting point and destination, driving options, and request time to Google to calculate an estimate. Google also receives network information needed to handle the request, such as the requesting computer’s public IP address. Google’s handling of information is described in its <a href="https://policies.google.com/privacy">Privacy Policy</a>.</p>
+    <p>The Google API key is read by the local server from a private file; it is not included in browser code. Family Hub does not save Google route responses or estimated durations to its server storage. It does keep local request-accounting records needed to enforce provider request limits; those records contain request timing and usage counts, not the API key or route response. A value already displayed in an open dashboard may remain visible temporarily and is marked old when it is no longer current.</p>
+    <p>Family Hub does not add traffic advertising or traffic analytics. This policy page is a static document and does not load code, styles, images, or other files from the private dashboard.</p>
+
+    <h2>Google Maps attribution</h2>
+    <p class="attribution" translate="no">Google Maps</p>
+    <p>Google Maps attribution is shown with the dashboard’s traffic estimates. This page itself displays no Google route content.</p>
+  </main>
+</body>
+</html>
